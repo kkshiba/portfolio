@@ -6,24 +6,20 @@ body {
     margin: 0;
     padding: 20px;
 }
-
 /* Center content */
 main {
     max-width: 800px;
     margin: auto;
 }
-
 header {
     text-align: center;
     margin-bottom: 30px;
 }
-
 #profile-img {
     width: 150px;
     border-radius: 50%;
     margin-bottom: 10px;
 }
-
 button {
     padding: 10px 20px;
     margin-top: 10px;
@@ -33,11 +29,9 @@ button {
     background: #ddd;
     transition: 0.3s;
 }
-
 button:hover {
     background: #ccc;
 }
-
 /* Base card style for all sections */
 .card {
     background-color: #ffffff;
@@ -47,43 +41,44 @@ button:hover {
     box-shadow: 0 4px 14px rgba(0,0,0,0.1);
     transition: 0.3s ease;
 }
-
 .card h2 {
     margin-top: 0;
 }
-
 /* Clean list styling */
 .card ul {
     padding-left: 20px;
     line-height: 1.8;
 }
-
+/* Certificate image styling */
+.cert-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border: 3px solid #000;
+    border-radius: 8px;
+    display: block;
+}
 /* Hover lift effect */
 .card:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
-
 /* Dark Theme */
 body.dark {
     background-color: #121212;
     color: #f5f5f5;
 }
-
 body.dark .card {
     background-color: #1e1e1e;
     box-shadow: 0 4px 14px rgba(255,255,255,0.08);
 }
-
 body.dark .card:hover {
     box-shadow: 0 6px 16px rgba(255,255,255,0.12);
 }
-
 body.dark button {
     background: #2a2a2a;
     color: white;
 }
-
 body.dark button:hover {
     background: #3a3a3a;
 }
