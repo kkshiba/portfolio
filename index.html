@@ -3,47 +3,84 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Student Portfolio</title>
+      <title>Antonio's Portfolio</title>
+      
+      <link rel="icon" type="image/jpg" href="profile.jpg">
+      
       <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
    </head>
-   <body>
-      <header>
-         <h1 id="name">Antonio De Jesus</h1>
-         <img src="profile.jpg" alt="Profile Picture" id="profile-img">
-         <p id="course-year">Computer Science - 2nd Year</p>
-         <button id="theme-toggle">Switch Theme</button>
+   <body> 
+      <header class="header-top-bar">
+         <label class="switch">
+            <input type="checkbox" id="theme-toggle"> 
+            <span class="slider round">
+               <i class="fas fa-sun light-icon"></i>
+               <i class="fas fa-moon dark-icon"></i>
+            </span>
+         </label>
       </header>
-      <main>
-      <section id="about" class="card">
-         <h2>About Me</h2>
-         <p>
-            Hello! I'm Antonio De Jesus, a 2nd year Computer Science student who enjoys
-            travelling, exploring new things, and continuously trying to learn new skills.
-            I wish to build meaningful and efficient systems in the near future, and I'm 
-            always eager to learn more.
-         </p>
-      </section>
+      
+      <main class="page-layout content-container">
+         <div class="left-column">
+             <div class="card profile-card entrance-animation">
+                 <img src="profile.jpg" alt="Profile Picture" id="profile-img">
+                 <h1 id="name">Antonio De Jesus</h1>
+                 <p class="role-location">
+                     <i class="fas fa-map-marker-alt"></i> General Santos City, Philippines
+                 </p>
+                 <p id="course-year" class="role-text">Computer Science - 2nd Year</p>
+                 
+                 <div class="contact-actions">
+                     <a href="mailto:adejesus@mcm.edu.ph" class="primary-btn highlighted-btn">
+                         <i class="far fa-envelope"></i> Send Email
+                     </a>
+                 </div>
+             </div>
+             
+             <section id="about" class="card about-card entrance-animation">
+                 <h2>About Me</h2>
+                 <p>
+                     Hello! I'm Antonio De Jesus, a 2nd year Computer Science student who enjoys
+                     travelling, exploring new things, and continuously trying to learn new skills.
+                     I am passionate when it comes to technology and programming, 
+                     and I wish to build meaningful and efficient systems in the near future, and I'm 
+                     always eager to learn more.
+                 </p>
+             </section>
+
+             <section id="social-links" class="card social-card entrance-animation">
+                 <h2><i class="fas fa-link"></i> Social Links</h2>
+                 <div class="social-list">
+                     <a href="https://www.linkedin.com/" class="social-item linkedin">
+                         <i class="fab fa-linkedin-in"></i> LinkedIn
+                     </a>
+                     <a href="https://github.com/kkshiba" class="social-item github">
+                         <i class="fab fa-github"></i> GitHub
+                     </a>
+                 </div>
+             </section>
+         </div>
          
-      <section id="achievements" class="card">
-         <h2>Achievements/Certifications</h2>
-         <ul>
-            <li>
-               IT Specialist Certificate in Java
-               <br>
-               <img src="JavaCert.png" alt="IT Specialist Certificate in Java" class="cert-img">
-            </li>
-         </ul>
-      </section>
-         
-      <section id="projects" class="card">
-         <h2>Previous Projects</h2>
-         <ul>
-            <li>TrackWise: A Personal Budget Tracking and Expense Management System</li>
-            <li>Parsing Postcards: A CFG-Based Tokenizer</li>
-            <li>Simple Ping-Pong Game</li>
-         </ul>
-      </section>
-         
+         <div class="right-column">
+             <section id="achievements" class="card entrance-animation">
+                 <h2>Achievements/Certifications</h2>
+                 <div class="list-item-container">
+                    <p class="list-title">IT Specialist Certificate in Java</p>
+                    <img src="JavaCert.png" alt="IT Specialist Certificate in Java" class="cert-img">
+                 </div>
+             </section>
+             
+             <section id="projects" class="card entrance-animation">
+                 <h2>Previous Projects</h2>
+                 <ul>
+                     <li>TrackWise: A Personal Budget Tracking and Expense Management System</li>
+                     <li>Parsing Postcards: A CFG-Based Tokenizer</li>
+                     <li>Simple Ping-Pong Game</li>
+                 </ul>
+             </section>
+         </div>
       </main>
       
       <script src="script.js"></script>
