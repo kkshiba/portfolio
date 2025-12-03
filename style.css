@@ -314,6 +314,40 @@ body.dark input:checked + .slider .dark-icon {
     display: block;
 }
 
+/* --- PROJECT LINK STYLES --- */
+.project-link {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.project-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+.project-link i {
+    font-size: 0.85em;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover i {
+    transform: translateX(3px);
+}
+
+/* Dark mode override for project link */
+body.dark .project-link {
+    color: #4da3ff;
+}
+
+body.dark .project-link:hover {
+    color: #80bdff;
+}
+
 /* --- THEME TOGGLE SWITCH UI --- */
 .switch {
     position: relative;
